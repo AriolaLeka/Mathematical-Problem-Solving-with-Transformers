@@ -10,7 +10,6 @@ This repository contains a project focused on solving basic mathematical problem
 - [Model](#model)
 - [Greedy Search Algorithm](#greedy-search-algorithm)
 - [Accuracy Computation](#accuracy-computation)
-- [Training](#training)
 - [Experiments](#experiments)
 - [Results](#results)
 
@@ -22,25 +21,17 @@ This project aims to solve mathematical problems using neural networks. It focus
 
 Follow these steps to set up and run the project:
 
-1. **Download the Pre-processed Dataset:**
+1. ## Clone the Repository:
 
-   Download the pre-processed dataset from [Datase](Dataset). The dataset is organized into modules, each containing `train.x` (questions) and `train.y` (answers) files.
-
-2. **Clone the Repository:**
-
-   Clone this repository to your local machine:
-
-   ```sh
    git clone https://github.com/AriolaLeka/Mathematical-Problem-Solving-with-Transformers.git
-   ```
 
-3. **Dependencies:**
+2. ## Navigate to the Project Directory:
 
-   Ensure you have the required dependencies installed. You can install them using:
+   cd Mathematical-Problem-Solving-with-Transformers
 
-   ```sh
-   pip install -r requirements.txt
-   ```
+3. ## Run the Python Script:
+
+   python transformer.py
 
 ## Dataloader
 
@@ -58,22 +49,9 @@ The greedy search algorithm is implemented to decode sequences using the trained
 
 The `compute_accuracy` function calculates the accuracy of the model's predictions. A prediction is counted as correct only if the entire output sequence matches the correct answer sequence.
 
-## Training
-
-To train the model:
-
-1. Define your hyperparameters in the `train.py` script.
-2. Run the training script:
-
-   ```sh
-   python train.py
-   ```
-
-The training pipeline involves defining the loss function, input tensors, and target label tensors. Training and validation losses, as well as accuracy, are tracked during training.
-
 ## Experiments
 
-The project includes experiments on different modules from the DeepMind mathematical dataset. You can run experiments on modules like "numbers - place value" and "compare - sort". Adjust hyperparameters and model configurations for each experiment.
+The project includes experiments on the linear algebra module from the DeepMind mathematical dataset.
 
 ## Results
 
